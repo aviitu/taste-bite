@@ -1,0 +1,77 @@
+:root {
+    --fonte-conteudo: 'Roboto';
+    --fonte-titulo: 'Playfair Display';
+    --branco-principal: #FFFFFF;
+    --cor-destaque-review: #ff642f;
+    --cor-texto: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--branco-principal);
+    color: var(--cor-texto);
+}
+
+.cabecalho {
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.logo_cabecalho {
+    display: flex;
+    width: 10%;
+    height: 5%;
+    padding-right: 100px;
+
+}
+
+.foto_perfil {
+    display: flex;
+    width: 4%;
+    height: 4%;
+    padding-left: 100px;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+}
+
+.cabecalho_menu_link {
+    font-family: var(--fonte-conteudo);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+.cabecalho_menu_link_cookmaster {
+    color: var(--cor-destaque-review);
+    font-family: var(--fonte-conteudo);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.banner {
+    width: 70%;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal_conteudo{
+    display: flex;
+    flex-direction: row;
+}
