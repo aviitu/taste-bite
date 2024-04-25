@@ -1,3 +1,6 @@
+
+@import url(/pages-style/header.css);
+@import url(/pages-style/footer.css);
 :root {
     --fonte-conteudo: 'Roboto';
     --fonte-titulo: 'Playfair Display';
@@ -14,48 +17,7 @@
 body {
     background-color: var(--branco-principal);
     color: var(--cor-texto);
-}
-
-.cabecalho {
-    padding-top: 2em;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.logo_cabecalho {
-    display: flex;
-    width: 220px;
-    padding-right: 100px;
-
-}
-
-.foto_perfil {
-    display: flex;
-    width: 4%;
-    height: 4%;
-    padding-left: 100px;
-}
-
-.cabecalho_menu {
-    display: flex;
-    gap: 90px;
-    align-items: center;
-}
-
-.cabecalho_menu_link {
-    font-family: var(--fonte-conteudo);
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--cor-texto);
-}
-
-.cabecalho_menu_link_cookmaster {
-    color: var(--cor-destaque-review);
-    font-family: var(--fonte-conteudo);
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-decoration: none;
+    margin: 0; /* Adicionei para garantir que não haja margens extras */
 }
 
 .banner {
@@ -65,8 +27,9 @@ body {
 }
 
 .principal {
-    display: flex;
-    flex-direction: column;
+    padding-bottom: 40px; /* Adicione o padding apenas ao elemento principal */
+    min-height: calc(100vh - 40px); /* Mova o cálculo da altura mínima para o .principal */
+    overflow: auto;
 }
 
 .principal_banner {
@@ -124,33 +87,3 @@ margin-left: 8px;
 font-weight: 600;
 }
 
-.rodape{
-    display: flex;
-    align-items: center;
-    background-color: aliceblue;
-    font-family: var(--fonte-conteudo);
-    flex-direction: column;
-    color: var(--cor-texto);
-    height: 100px;
-    
-}
-.rodape_texto-titulo{
-    font-weight: 600;
-    margin: 8px 8px;
-}
-.rodape_texto-email{
-   margin: 4px 4px;
-   
-}
-.rodape_email{
-    text-decoration: none;
-    color: #00008B;
-    font-weight: 500;
-}
-.rodape-descritivos{
-    text-decoration: none;
-    color: #00008B;
-    font-weight: 500;
-    margin-bottom: 10px;
-    
-}

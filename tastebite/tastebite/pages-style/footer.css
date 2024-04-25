@@ -1,0 +1,28 @@
+.rodape {
+    position: static;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    font-family: var(--fonte-conteudo);
+    flex-direction: column;
+    color: var(--cor-texto);
+    
+}
+.rodape_texto-titulo{
+    font-weight: 600;
+   margin: 10px 8px;
+}
+
+.rodape_email{
+    text-decoration: none;
+    color: #00008B;
+    font-weight: 500;
+   
+}
+.rodape-descritivos{
+    text-decoration: none;
+    color: #00008B;
+    font-weight: 500;
+    margin: 10px;
+}
